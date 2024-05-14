@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0056)http://127.0.0.1:5500/TeamPlayer/Hello/TableColours.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Colours</title>
+    <style>
+      table,
+      td {
+        border: 2px solid black;
+        padding: 65px;
+        margin: 182px;
+        margin-left: 645px;
+        margin-right: 5px;
+        border-spacing: 20px;
+        background-color: rgb(177, 226, 220);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="color: blueviolet; text-align: center; font-size: 76px; padding-bottom: 10px;">Table Colours</h1>
+    <table>
+      <tbody><tr>
+        <td style="background-color: gold">Gold</td>
+        <td style="background-color: goldenrod">Goldenrod</td>
+        <td style="background-color: yellow">Yellow</td>
+        <td style="background-color: orange">Orange</td>
+        <td style="background-color: red">Red</td>
+      </tr>
+      <tr>
+        <td style="background-color: sienna">Sienna</td>
+        <td style="background-color: firebrick">Firebrick</td>
+        <td style="background-color: deeppink">Deeppink</td>
+        <td style="background-color: magenta">Magenta</td>
+        <td style="background-color: yellowgreen">Yellowgreen</td>
+      </tr>
+      <tr>
+        <td style="background-color: coral">Coral</td>
+        <td style="background-color: bisque">Bisque</td>
+        <td style="background-color: lavender">Lavender</td>
+        <td style="background-color: darkkhaki">Darkkhaki</td>
+        <td style="background-color: deepskyblue">Deepskyblue</td>
+      </tr>
+      <tr>
+        <td style="background-color:aquamarine">Aquamarine</td>
+        <td style="background-color:cornflowerblue">Cornflowerblue</td>
+        <td style="background-color: forestgreen">Forestgreen</td>
+        <td style="background-color:slategrey">Slategrey</td>
+        <td style="background-color: darkolivegreen">DarkOlive</td>
+      </tr>
+    </tbody></table>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
